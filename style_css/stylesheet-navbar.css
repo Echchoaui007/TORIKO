@@ -1,0 +1,95 @@
+*{
+	background-color: rgb(221, 94, 94);
+	font-family: poppins;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+.backgroun-image{
+	background-image: url("/img/home-wallpaper.jpg");
+	width: 200px;
+	height: 100vh;
+}
+
+.list-item{
+display: block;
+padding: 20px 10px;
+
+
+}
+.navbar{
+	display: flex;
+    justify-content: center;
+	background-color: rgb(221, 94, 94);
+	align-items: center;
+}
+.nav-list{
+	list-style-type: none;
+	text-align: center;
+
+}
+.nav-list .list-item{
+	display: inline-block;
+	padding: 30px;
+}
+
+
+.logo{
+	
+	transition: .5s;
+}
+.logo:hover{
+	transform: scale(1.4);
+}
+
+.nave-link{
+	text-decoration: none;
+	color: black;
+	font-size: 33px;
+	transition: all 1s;
+}
+.nave-link:hover{
+	color: rgb(255, 147, 147);
+	transition: .3s;
+}
+.menu{
+	display: none;
+}
+.menu-line{
+	width: 25px;
+	height: 5px;
+	background-color: black;
+	margin-bottom: 4px;
+	
+}
+@media all and (max-width: 768px){
+	.navbar{
+		
+		flex-direction: column;
+		position: relative;
+	}
+
+	.menu{
+		display: block;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		cursor: pointer;
+		}
+	.nav-list{
+		list-style-type: none;
+		width: 100%;
+		text-align: center;
+		display: none;
+	}
+	.nav-list .list-item{
+		display: block;
+		padding: 2px;
+	}
+	.active{
+		display: block;
+	}
+	.logo-container{
+		cursor: none;
+	}
+}
