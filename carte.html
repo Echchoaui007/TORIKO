@@ -2,165 +2,274 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>undertale</title>
-	<link rel="stylesheet" type="text/css" href="style_css/stylesheet-navbar.css">
-	<link rel="stylesheet" type="text/css" href="style_css/css-style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>undertale</title>
+    <link rel="stylesheet" type="text/css" href="style_css/stylesheet-navbar.css">
+    <link rel="stylesheet" type="text/css" href="style_css/css-style.css">
 </head>
 
 <body>
 
-	<div class="nav">
-		<input type="checkbox" id="nav-check">
-		<div class="nav-header">
-			<div class="nav-title">
-				TORIKO
-			</div>
-		</div>
-		<div class="nav-btn">
-			<label for="nav-check">
-				<span></span>
-				<span></span>
-				<span></span>
-			</label>
-		</div>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                TORIKO
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
 
-		<div class="nav-links">
-			<a href="index.html">Accueil</a>
-			<a href="carte.html">Carte</a>
-			<a href="about.html">About</a>
-			<a href="contact.html">Contact Us</a>
-		</div>
-	</div>
-
-	<div class="cover-carte"></div>
-	<div class="full">
-
-		<div class="list">
-			<div class="titre">
-				HOUSE OF SHETS
-			</div>
-			<div class="plats">
-				<div class="plats-element">
-					<div class="element-name">Salmon handroll</div>
-					<div class="element-price">23.99</div>
-				</div>
-			</div>
-			<div class="plats">
-				<div class="plats-element">
-					<div class="element-name">Bay Scallop handroll</div>
-					<div class="element-price">15.99</div>
-				</div>
-			</div>
-			<div class="plats">
-				<div class="plats-element">
-					<div class="element-name">Snow Crap handroll</div>
-					<div class="element-price">9.99</div>
-				</div>
-			</div>
-		</div>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="carte.html">Carte</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
 
 
-		<div class="list">
-			<a>
-				<div class="titre">
-			</a>
-			OBENTO
-		</div>
-		<div class="plats">
-			<div class="plats-element">
-				<div class="element-name">Sugo Spicy Tuna</div>
-				<div class="element-price">23.99</div>
+    <div class="cart cart-hidden">
+        <h2>0</h2>
+    </div>
+    <div class="container">
+        <button id="show-cart">Cart</button>
+        <div class="title">
+            <h2>
+                Special food menu
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum totam quasi odit,
+                ducimus nam quae voluptates amet sunt, vel quaerat beatae labore autem praesentium ex corporis ut alias
+                veniam laborum minima blanditiis! Quasi repellat nesciunt sapiente. Repellendus quidem quasi qui.
+            </p>
+        </div>
+        <div class="list">
+            <li data-filter=".all" class="active">All</li>
+            <li data-filter=".sushi">Sushi</li>
+            <li data-filter=".salad">Salad</li>
+            <li data-filter=".soda">Soda & Juice</li>
+        </div>
 
-			</div>
-		</div>
-		<div class="plats">
-			<div class="plats-element">
-				<div class="element-name">Salmon</div>
-				<div class="element-price">15.99</div>
-			</div>
-		</div>
-		<div class="plats">
-			<div class="plats-element">
-				<div class="element-name">California</div>
-				<div class="element-price">9.99</div>
-			</div>
-		</div>
-	</div>
+        <div class="content">
+            <div class="box all sushi">
+                <div class="image">
+                    <img src="img/sushi1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>SUSHI</h3>
+                    <hr>
+                    <section>13.99</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Sushi</article>
+                    <button class="add-cart" id="cart1">Add</button>
+                </div>
+            </div>
 
+            <div class="box all sushi">
+                <div class="image">
+                    <img src="img/sushi2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3 class="names">SUSHI</h3>
+                    <hr>
+                    <section>20.99</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
 
-	<div class="list">
-		<div class="titre">
-			SALAD
-		</div>
-		<div class="plats">
-			<div class="plats-element">
-				<div class="element-name">Toro handroll</div>
-				<div class="element-price">20</div>
-			</div>
-		</div>
-		<div class="plats">
-			<div class="plats-element">
-				<div class="element-name">Salmon handroll</div>
-				<div class="element-price">18</div>
-			</div>
-		</div>
-		<div class="plats">
-			<div class="plats-element">
-				<div class="element-name">Snow crab handroll</div>
-				<div class="element-price">9.99</div>
-			</div>
-		</div>
-	</div>
+                    </div>
+                    <article>Category: Sushi</article>
+                    <button class="add-cart" id="cart2">Add</button>
+                </div>
+            </div>
 
+            <div class="box all sushi">
+                <div class="image">
+                    <img src="img/sushi3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>SUSHI</h3>
+                    <hr>
+                    <section>15.99</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
 
-	<div class="list">
-		<div class="titre">
-			SODA
-		</div>
-		<div class="plats">
-			<div class="plats-element">
-				<div class="element-name">Soda</div>
-				<div class="element-price">5</div>
-			</div>
-		</div>
-		<div class="plats">
-			<div class="plats-element">
-				<div class="element-name">Energy Drink</div>
-				<div class="element-price">7</div>
-			</div>
-		</div>
-		<div class="plats">
-			<div class="plats-element">
-				<div class="element-name">Water</div>
-				<div class="element-price" onclic>
-					3
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="contAddtoCart">
-
-		<div class="addTocart">
-		<div class="Add-purshase">
-			<button>Purchas</button>
-		</div>
-		<div class="Add-total"></div>
-	</div>
-		
-
-
-	</div>
-
-
-
-	</div>
+                    </div>
+                    <article>Category: Sushi</article>
+                    <button class="add-cart" id="cart3">Add</button>
+                </div>
+            </div>
 
 
 
 
+            <div class="box all salad">
+                <div class="image">
+                    <img src="img/salad1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>SALAD</h3>
+                    <hr>
+                    <section>19.99</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Sushi</article>
+                    <button class="add-cart" id="cart4">Add</button>
+                </div>
+            </div>
+
+            <div class="box all salad">
+                <div class="image">
+                    <img src="img/salad2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>SALAD</h3>
+                    <hr>
+                    <section>10.5</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Salad</article>
+                    <button class="add-cart" id="cart5">Add</button>
+                </div>
+            </div>
+
+            <div class="box all salad">
+                <div class="image">
+                    <img src="img/salad3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>SALAD</h3>
+                    <hr>
+                    <section>20</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Salad</article>
+                    <button class="add-cart" id="cart6">Add</button>
+                </div>
+            </div>
+
+
+
+            <div class="box all soda">
+                <div class="image">
+                    <img src="img/soda.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>SODA</h3>
+                    <hr>
+                    <section>5.99</section>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <article>Category: Soda & Juice</article>
+                    <button class="add-cart" id="cart7"">Add</button>
+                </div>
+            </div>
+            
+            <div class=" box all soda">
+                        <div class="image">
+                            <img src="img/water.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>WATER</h3>
+                            <hr>
+                            <section>3.99</section>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <article>Category: Soda & Juice</article>
+                            <button class="add-cart" id="cart8">Add</button>
+                        </div>
+                </div>
+
+                <div class="box all soda">
+                    <div class="image">
+                        <img src="img/juice1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>juice</h3>
+                        <hr>
+                        <section>12.99</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <article>Category: Soda & Juice</article>
+                        <button class="add-cart" id="cart9">Add</button>
+                    </div>
+                </div>
+
+                <div class="box all soda">
+                    <div class="image">
+                        <img src="img/juice2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>food</h3>
+                        <hr>
+                        <section>9.99</section>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <article>Category: Soda & Juice</article>
+                        <button class="add-cart" id="cart10">Add</button>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <script src="javascript/filter.js"></script>
+        <script src="javascript/cart.js"></script>
 
 
 
@@ -174,84 +283,84 @@
 
 
 
-	<footer>
-		<div class="row primary">
-			<div class="column about">
-
-				<h3>TORIKO</h3>
-
-				<p>
-					Sushi:
-					A delicious and healthy way
-				</p>
-
-			</div>
-
-			<div class="column links">
-				<h3>Social media </h3>
-
-				<ul>
 
 
-					<li>
-						<a href="#facebook">Facebook</a>
-					</li>
-					<li>
-						<a href="#Twitter">Twitter</a>
-					</li>
-					<li>
-						<a href="#Instagram">instagram</a>
-					</li>
-				</ul>
-
-			</div>
 
 
-			<div class="column links">
-				<h3>Some Links</h3>
-				<ul>
-					<li>
-						<a href="#faq">F.A.Q</a>
-					</li>
-					<li>
-						<a href="#cookies-policy">Cookies Policy</a>
-					</li>
-					<li>
-						<a href="#terms-of-services">Terms Of Service</a>
-					</li>
-					<li>
-						<a href="#support">Support</a>
-					</li>
-				</ul>
-			</div>
+        <footer>
+            <div class="row primary">
+                <div class="column about">
 
-			<div class="column subscribe">
-				<h3>Subscribe now</h3>
-				<div>
-					<input type="email" placeholder="Your email id here" />
-					<button class="button">Subscribe</button>
-				</div>
+                    <h3>TORIKO</h3>
 
-			</div>
+                    <p>
+                        Sushi:
+                        A delicious and healthy way
+                    </p>
 
-		</div>
+                </div>
 
-		<div class="row copyright">
-			<div class="footer-menu">
+                <div class="column links">
+                    <h3>Social media </h3>
 
-				<a href="index.html">Accueil</a>
-				<a href="carte.html">carte</a>
-				<a href="about.html">About</a>
-				<a href="contact.html">Contact</a>
+                    <ul>
 
 
-			</div>
-			<p>Copyright &copy;2022 TORIKO</p>
-		</div>
-	</footer>
+                        <li>
+                            <a href="#facebook">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#Twitter">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#Instagram">instagram</a>
+                        </li>
+                    </ul>
+
+                </div>
 
 
-	<script src="javascript/cart.js"></script>
+                <div class="column links">
+                    <h3>Some Links</h3>
+                    <ul>
+                        <li>
+                            <a href="#faq">F.A.Q</a>
+                        </li>
+                        <li>
+                            <a href="#cookies-policy">Cookies Policy</a>
+                        </li>
+                        <li>
+                            <a href="#terms-of-services">Terms Of Service</a>
+                        </li>
+                        <li>
+                            <a href="#support">Support</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column subscribe">
+                    
+
+                </div>
+
+            </div>
+
+            <div class="row copyright">
+                <div class="footer-menu">
+
+                    <a href="index.html">Accueil</a>
+                    <a href="carte.html">carte</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+
+
+                </div>
+                <p>Copyright &copy;2022 TORIKO</p>
+            </div>
+        </footer>
+
+
+        <script src="javascript/cart.js"></script>
 </body>
 
 </html>

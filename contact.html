@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,43 +8,44 @@
 	<link rel="stylesheet" type="text/css" href="style_css/stylesheet-navbar.css">
 	<link rel="stylesheet" type="text/css" href="style_css/css-contact.css">
 </head>
+
 <body>
-	
+
 	<div class="nav">
 		<input type="checkbox" id="nav-check">
 		<div class="nav-header">
-		  <div class="nav-title">
-			TORIKO
-		  </div>
+			<div class="nav-title">
+				TORIKO
+			</div>
 		</div>
 		<div class="nav-btn">
-		  <label for="nav-check">
-			<span></span>
-			<span></span>
-			<span></span>
-		  </label>
+			<label for="nav-check">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
 		</div>
-		
+
 		<div class="nav-links">
-		  <a href="index.html">Accueil</a>
-		  <a href="carte.html">Carte</a>
-		  <a href="about.html">About</a>
-		  <a href="contact.html">Contact Us</a>
+			<a href="index.html">Accueil</a>
+			<a href="carte.html">Carte</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact Us</a>
 		</div>
-	  </div>			
-	
+	</div>
+
 	<section class="about_section layout_padding2-top layout_padding-bottom">
 		<div class="containerr">
-		  <div class="contact-boxx">
-			<div class="rightt">
-			  <h2>Contact Us</h2>
-			  <input type="text" class="fieldd" placeholder="Your Name">
-			  <input type="text" class="fieldd" placeholder="Your phone number">
-			  <input type="email" class="fieldd" placeholder="Your Email">
-			  <textarea placeholder="Message" class="fieldd"></textarea>
-			  <button class="btn">Send</button>
+			<div class="contact-boxx">
+				<div class="rightt">
+					<h2>Contact Us</h2>
+					<input type="text" class="fieldd" id="name" placeholder="Your Name">
+					<input type="text" class="fieldd" id="phone" placeholder="Your phone number">
+					<input type="email" class="fieldd" id="email" placeholder="Your Email">
+					<textarea placeholder="Message" id="text" class="fieldd"></textarea>
+					<button class="btn " id="send" >Send</button>
+				</div>
 			</div>
-		  </div>
 		</div>
 	</section>
 
@@ -99,14 +101,7 @@
 				</ul>
 			</div>
 
-			<div class="column subscribe">
-				<h3>Subscribe now</h3>
-				<div>
-					<input type="email" placeholder="Your email id here" />
-					<button>Subscribe</button>
-				</div>
-
-			</div>
+		
 
 		</div>
 
@@ -123,7 +118,7 @@
 			<p>Copyright &copy;2022 TORIKO</p>
 		</div>
 	</footer>
-	
+	<script src="javascript/contact.js"></script>
 </body>
 
 </html>

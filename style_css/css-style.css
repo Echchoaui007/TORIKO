@@ -1,82 +1,233 @@
-.cover-carte{
-    background-image: url(../img/cover.jpg);
-    background-size: cover;
-    width: 100%px;
-    height: 500px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-.full {
-    background-color: rgb(137,141,142);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    gap: 50px;
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
 }
-
-.list{
-    width: 350px;
-    height: 300px;
+.cart{
+    top: 0;    
+    background-color: rgb(223, 205, 205);
+    height: 100vh ;
+    position: fixed;
+    width: 300px;
+    right: 0px;
+    transition: right  .5s ease-in;
+    z-index: 4;
+    overflow-y: scroll;
+}
+.cart-hidden{
+    
+    right: -310px;
+    
+}
+.container{
+    width:85%;
+    margin: 50px auto;
+    text-align: center;
+}
+.title h2{
+    font-family: lobster, cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+.box button{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 17px;
+    background-color: #d4a373;
+    cursor: pointer;
+  
+}
+.text{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-top: 30px;
 }
 
-.titre{
-    
-    background-color: rgb(195, 191, 140);
+.title p{
+font-size: 14px;
+color: #333;
+margin: 0px auto 20px auto;
+width: 60%;
+
+}
+.list{
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    margin-bottom: 50px;
 }
-.plats-element{
+.list li{
+    margin: 0px 15px;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+}
+.list li::after{
+content: "";
+position: absolute;
+bottom: -5px;
+width: 0%;
+background: #d4a373;
+height: 2px;
+left: 50%;
+transition: .3s ease-in-out;
+}
+.list li:hover::after{
+width: 100%;
+left: 0%;
+}
+.list li.active{
+    color: #d4a373;
+    transition: .3s ease-in-out;
+}
+.content{
     display: flex;
-    justify-content:space-between;
-    font-size: larger;
-}
-
-.element-name{
- color: rgb(206, 203, 196);
-}
-.element-price{
-    display: flex;
-    justify-content: center;
-    width: 70px;
-    background-color: black;
-    color: rgb(206, 203, 196);
-    border: 6px solid  rgb(206, 203, 196) ;
-}
-
-.contAddtoCart{
-    border-radius: 5px;
-    border: 2px solid;
-    width: 350px;
-    height: 500px;
-    display: flex;
-    
-    
-    background-color: grey;
-
-    
-}
-.addTocart{
-    width: 350px;
-    height: 500px;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 10px;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.Add-total{
-    border: 2px solid;
-    height: 53px;
-    width: 200px;
-    background-color: white;
-    border-radius: 5px;
-    padding-bottom: 1em;
+.box{
+    width: 32%;
+    padding: 10px;
+    box-shadow: rgba(0,0,0,0.05)0px 0px 0px 1px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    justify-items: center;
+    margin-bottom: 20px;
+    animation: displayable 1s ease-in-out;
+}
+.box .image{
+    width: 35%;
+}
+.image img{
+    width: 100%;
+}
+.box .text{
+    width: 60%;
+    text-align: left;
+}
+.text h3{
+    font-size: 18px;
+    color: black;
 }
 
+.text hr{
+    height: 2px;
+    background: #d4a373;
+    width: 50px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.text section{
+    font-weight: 600;
+    font-size: 17px;
+}
+.text i{
+    color: #d4a373;
+    font-size: 13px;
+}
+.text article{
+    font-size: 14px;
+
+}
+
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes displayable{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 900px){
+    .box{
+        width: 40%;
+        padding: 10px;
+        box-shadow: rgba(0,0,0,0.05)0px 0px 0px 1px;
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        margin-bottom: 20px;
+        animation: displayable 1s ease-in-out;
+    }
+    @media screen and (max-width: 768px){
+        .box{
+            width: 75%;
+            padding: 10px;
+            box-shadow: rgba(0,0,0,0.05)0px 0px 0px 1px;
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            margin-bottom: 20px;
+            animation: displayable 1s ease-in-out;
+        }
+    
+    
+    }
+    @media screen and (max-width: 768px){
+        .box{
+            width: 75%;
+            padding: 10px;
+            box-shadow: rgba(0,0,0,0.05)0px 0px 0px 1px;
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            margin-bottom: 20px;
+            animation: displayable 1s ease-in-out;
+        }
+    
+    
+    }
+}
+
+
+.cart .box {
+    width: auto;
+}
+.box section::before{
+content: "$";
+}
