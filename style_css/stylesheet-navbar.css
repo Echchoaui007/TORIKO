@@ -2,7 +2,13 @@
 	padding: 0px;
 	box-sizing: border-box;
   }
-  
+  .nav-title{
+	margin-bottom: 20px;
+  }
+  .nav-title img{
+	width: 100px;
+	
+  }
   body {
 	margin: 0px;
 	font-family: 'segoe ui';
